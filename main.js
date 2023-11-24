@@ -20,6 +20,9 @@ async function query(data) {
     document.querySelector('.grid').scrollIntoView();
     
     const comicDisplay = document.getElementById('comicDisplay');
+    const loader = document.getElementById('loader')
+    loader.style.display = 'block'
+    
     comicDisplay.innerHTML = '';
     
     const panelsCount = 10;
@@ -35,6 +38,8 @@ async function query(data) {
       try {
         // Call the API with the prepared data for each panel
         const responseBlob = await query(comicData);
+        if(responseBlob)
+           loader.style.display = 'none'
 
         // Display the generated comic strip for each panel
         const imageUrl = URL.createObjectURL(responseBlob); // Create image URL from Blob
