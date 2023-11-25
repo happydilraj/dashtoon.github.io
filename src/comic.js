@@ -38,9 +38,16 @@ const Comic = () => {
     console.log("hi")
 
     const generatedImages = [];
+    const nonEmptyPanels = panels.filter(panel => panel !== ''); // Filtering non-empty panels
+
+    if (nonEmptyPanels.length === 0) {
+      setLoader(false);
+      alert("Please enter at least 1 panel to generate comic");
+      window.location.reload(); // Reload the page if no panels are entered
+      return;
+    }
 
     try {
-      const nonEmptyPanels = panels.filter(panel => panel !== ''); // Filtering non-empty panels
       for (let i = 0; i < nonEmptyPanels.length; i++) {
         const panelText = nonEmptyPanels[i];
         const comicData = {
