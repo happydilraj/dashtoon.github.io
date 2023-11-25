@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dashtoon.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/dashtoon.github.io/static/js/main.d3a8ea8e.js",
+    "static/js/787.223550ad.chunk.js": "/dashtoon.github.io/static/js/787.223550ad.chunk.js",
+    "static/media/logo.svg": "/dashtoon.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/dashtoon.github.io/index.html",
+    "main.073c9b0a.css.map": "/dashtoon.github.io/static/css/main.073c9b0a.css.map",
+    "main.d3a8ea8e.js.map": "/dashtoon.github.io/static/js/main.d3a8ea8e.js.map",
+    "787.223550ad.chunk.js.map": "/dashtoon.github.io/static/js/787.223550ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d3a8ea8e.js"
+  ]
+}
